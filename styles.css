@@ -1,0 +1,156 @@
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image:url('25501.jpg');
+    background-size:cover ;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    height:100vh;
+
+}
+.container
+{
+    padding:20px 70px;
+    color:#fff;
+}
+
+.currentInfo
+{  display:flex;
+    flex:wrap;
+   justify-content: space-between;
+}
+.time
+{
+    font-size: 60px;
+    font-weight: 70px;
+}
+#AM-PM{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.date{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.place
+{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.country
+{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.others
+{
+    display: flex;
+    flex-direction: column;
+    background:rgba(24,24,35,0.6);
+    padding:20px 20px;
+    border-radius: 10px;
+    justify-content: space-around;
+    border: 2px solid rgba(255, 255, 255, 0.899);
+}
+
+#items
+{   display: flex;
+    
+    justify-content: space-between;
+}
+
+.future-forecast
+{
+    background: rgba(24,24,35,0.6);
+    padding: 24px ;
+    margin-top:20px;
+    position:fixed;
+    bottom:0;
+    display:flex;
+    color:white;
+    width:100%;
+    justify-content: space-around;
+    height:40vh;
+    align-items: center;
+   
+
+}
+
+.OtherWeekdays
+{
+    display: flex;
+    color:rgb(211, 193, 193);
+    
+    
+}
+#alldays
+{   margin:0px 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    
+}
+
+.future-forecast .Today{
+    display:flex;
+    flex-direction: column;
+    font-size: 25px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 5px 50px;
+    margin: 10px;
+}
+
+.day{
+    background: rgba(24,24,35,0.3);
+    margin:10px 10px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tp{
+    text-align: center;
+}
+
+@media only screen and(max-width:700px)
+{
+    .future-forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+    .currentInfo
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.image{
+    height:6vh;
+}
+
+@media only screen and (max-width:1000px)
+{
+    .future-forecast
+    {
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+}
+
+.ws-icon{
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+   height:7vh;
+}
